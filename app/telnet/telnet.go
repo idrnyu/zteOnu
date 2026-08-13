@@ -7,7 +7,7 @@ import (
 )
 
 func New(user string, pass string, ip string, port int) (*Telnet, error) {
-	conn, err := net.Dial("tcp", fmt.Sprintf("%s:%d", ip, port))
+	conn, err := net.Dial("tcp", net.JoinHostPort(ip, fmt.Sprintf("%d", port)))
 	if err != nil {
 		return nil, err
 	}

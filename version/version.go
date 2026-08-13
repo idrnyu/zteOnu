@@ -8,7 +8,7 @@ var (
 	version = "dev"
 	appName = "ZteONU"
 	date    = "unknown"
-	intro   = "https://github.com/thank243/zteOnu"
+	intro   = "https://github.com/septrum101/zteOnu"
 )
 
 func Show() {
